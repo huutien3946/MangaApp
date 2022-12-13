@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    tools:context=".function.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/goldenrod"
+            app:endIconMode="clear_text"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeStepGranularity="20sp"
+                android:drawableStart="@drawable/ic_email_yellow"
+                android:drawablePadding="10dp"
+                android:hint="@string/dk_email"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/goldenrod"
+            app:endIconMode="clear_text"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_TenTaiKhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeStepGranularity="20sp"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:hint="@string/dn_tentaikhoan"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/goldenrod"
+            app:endIconMode="clear_text"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_Ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeStepGranularity="20sp"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:hint="@string/dn_ten"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColorHint="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/goldenrod"
+            app:endIconMode="password_toggle"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_MatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeStepGranularity="20sp"
+                android:drawableStart="@drawable/ic_lock_yellow"
+                android:drawablePadding="10dp"
+                android:hint="@string/dn_matkhau"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColorHint="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/goldenrod"
+            app:endIconMode="password_toggle"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_NhapLaiMatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeStepGranularity="20sp"
+                android:drawableStart="@drawable/ic_lock_yellow"
+                android:drawablePadding="10dp"
+                android:hint="@string/dk_nhaplaimatkhau"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="bottom|center">
+
+            <Button
+                android:id="@+id/btn_QuayLai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="Quay lại"
+                android:textSize="15sp"
+                tools:ignore="ButtonStyle,HardcodedText,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btn_DangKy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/btn_QuayLai"
+                android:background="@drawable/button"
+                android:text="@string/dk_dangky"
+                android:textSize="15sp"
+                tools:ignore="ButtonStyle,TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

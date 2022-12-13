@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".function.SearchTruyen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#363F44"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_TimKiem"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:hint="@string/search"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/midle_gray"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@id/et_TimKiem"
+            android:src="@drawable/ic_search_yellow"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/ig_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:layout_toStartOf="@id/et_TimKiem"
+            android:src="@drawable/refresh_yellow"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_DSTruyen_TimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

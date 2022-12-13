@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">MangaApp</string>
+    <string name="KhungTimKiem">Nhập tên truyện cần tìm</string>
+    <string name="menu">Menu</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_menu">menu</string>
+    <!-- cho navigation drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--cho form đăng ký đăng nhập-->
+    <string name="dn_tentaikhoan">Tên tài khoản</string>
+    <string name="dn_ten">Tên</string>
+    <string name="dn_matkhau">Mật khẩu</string>
+    <string name="dn_quenmatkhau">Quên mật khẩu?</string>
+    <string name="dn_dangnhap">Đăng nhập</string>
+    <string name="dn_chuacotaikhoan">Chưa có tài khoản?</string>
+    <string name="dn_dangky">Đăng ký</string>
+    <string name="dk_hovate">Họ và tên</string>
+    <string name="dk_email">Email</string>
+    <string name="dk_sdt">Số điện thoại</string>
+    <string name="dk_tendangnhap">Tên đăng nhập</string>
+    <string name="dk_matkhau">Mật khẩu</string>
+    <string name="dk_nhaplaimatkhau">Nhập lại mật khẩu</string>
+    <string name="dk_dangky">Đăng ký</string>
+    <string name="dk_dacotaikhoan">Đã có tài khoản?</string>
+    <string name="dk_dangnhap">Đăng nhập</string>
+    <!--    cho menu-->
+    <string name="menu_TaiKhoan">Tài khoản</string>
+    <string name="menu_YeuThich">Yêu thích</string>
+    <string name="menu_rank">BXH</string>
+    <!--    cho thông tin tài khỏan-->
+    <string name="ttcn_hovaten">Họ và tên</string>
+    <string name="ttcn_email">Email</string>
+    <string name="ttcn_doimatkhau">Đổi mật khẩu</string>
+    <string name="ttcn_doiemail">Đổi email</string>
+    <string name="ttcn_lichsu">Lịch sử</string>
+    <string name="ttcn_yeuthich">Yêu thích</string>
+    <string name="ttcn_xinchao">Xin chào</string>
+    <string name="ttcn_trangchu">Trang chủ</string>
+    <string name="ttcn_dangxuat">Đăng xuất</string>
+    <string name="ttcn_chinhsua">Chỉnh sửa</string>
+    <string name="ttcn_matkhau">Mật khẩu</string>
+    <string name="ttcn_levodongdien">Lê Võ Đông Điền</string>
+    <string name="ttcn_gmaillvdd">levodongdien@gmail.com</string>
+    <string name="ttcn_thongtincanhan">Thông tin cá nhân</string>
+    <string name="ttcn_binhluan">Bình luận</string>
+    <string name="tdmk_matkhaucu">Mật khẩu cũ</string>
+    <string name="tdmk_matkhaumoi">Mật khẩu mới</string>
+    <string name="tdmk_xacnhanmatkhaumoi">Xác nhận mật khẩu mới</string>
+    <string name="tdmk_thaydoimatkhau">Thay đổi mật khẩu</string>
+    <string name="tdmk_quaylai">Quay lại</string>
+    <string name="tdmk_capnhat">Cập nhật</string>
+    <string name="tdm_thaydoiemail">Thay đổi email</string>
+    <string name="tdm_nhapemail">Nhập email</string>
+    <!--   anh -->
+    <string name="img_hovaten">Họ và tên</string>
+    <string name="img_email">Email</string>
+    <string name="img_matkhau">Mật khẩu</string>
+    <string name="img_chinhsua">Chỉnh sửa</string>
+    <string name="img_sora">Sổ ra</string>
+    <string name="img_luive">Lùi về</string>
+    <string name="img_home">Home</string>
+    <string name="img_timkiem">Tìm kiếm</string>
+    <string name="img_trai">Sang trái</string>
+    <string name="img_phai">Sang phải</string>
+    <!--   admin-->
+    <string name="get_phanloai">Phân loại</string>
+    <string name="get_chapter">Chapter</string>
+    <string name="get_binhluan">Bình luận</string>
+    <string name="get_danhsachtaikhoan">Danh sách tài khoản</string>
+    <string name="get_danhsachtheloai">Danh sách thể loại</string>
+    <string name="get_danhsachtacgia">Danh sách tác giả</string>
+    <string name="get_tentruyen">Tên truyện</string>
+    <string name="search">Tác giả/Tác phẩm</string>
+    <string name="hot_truyen">Truyện Hot</string>
+    <string name="new_truyen">Truyện Mới</string>
+    <string name="add">Thêm</string>
+    <string name="add_binh_luan">Nhập bình luận</string>
+    <string name="submit">Xác nhận</string>
+    <!--   BXH-->
+    <string name="bxh_iv_truyen">Truyện ABC</string>
+    <string name="bxh_tv_truyen">Truyện ABC</string>
+    <string name="bxh_tv_tacgia">Tác giả ABC</string>
+    <string name="bangxephang">Bảng xếp hạng</string>
+    <string name="bxh_tong">Tổng</string>
+    <string name="bxh_thang">Tháng</string>
+    <string name="bxh_nam">Năm</string>
+    <!--   Thong tin lien he-->
+    <string name="thongtinlienhe">Thông tin liên hệ</string>
+    <string name="sodienthoaihotro">Số điện thoại quản trị viên: 0921436587</string>
+    <string name="logottlh">Logo thông tin liên hệ</string>
+
+</resources>

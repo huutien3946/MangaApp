@@ -7,6 +7,12 @@
     android:background="@color/dark_midle_gray"
     tools:context=".function.GetTruyen">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/backdrop"
         android:layout_width="0dp"
@@ -51,7 +57,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_noi_dung_truyen" />
 
-
     <kr.co.prnd.readmore.ReadMoreTextView
         android:id="@+id/tv_noi_dung_truyen"
         android:layout_width="match_parent"
@@ -95,20 +100,19 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toEndOf="@+id/manga_cover"
-        app:layout_constraintTop_toTopOf="@id/backdrop"
-        app:layout_constraintVertical_bias="0.438">
+        app:layout_constraintTop_toTopOf="@id/backdrop">
 
         <TextView
             android:id="@+id/tv_ten_truyen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:gravity="center"
-            android:text="tham tu lung danh co nan"
+            android:text="tham tu lung danh conan"
             android:textColor="@color/goldenrod"
             android:textIsSelectable="false"
             android:textSize="22sp"
@@ -117,8 +121,10 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv_tac_gia"
+            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            tools:listitem="item"/>
 
         <TextView
             android:id="@+id/tv_tinhtrang_truyen"
@@ -140,6 +146,17 @@
         app:layout_constraintStart_toEndOf="@+id/manga_cover"
         app:layout_constraintTop_toBottomOf="@+id/name_txt">
 
+        <TextView
+            android:id="@+id/tv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:drawableStartCompat="@drawable/ic_like" />
 
         <TextView
             android:id="@+id/tv_luotxem"
@@ -150,17 +167,6 @@
             android:text=""
             android:textColor="@color/white"
             app:drawableStartCompat="@drawable/ic_eye_black" />
-
-        <TextView
-            android:id="@+id/tv_like"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text=""
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            app:drawableStartCompat="@drawable/ic_like" />
 
         <ImageView
             android:id="@+id/btn_fav"

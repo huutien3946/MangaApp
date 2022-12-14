@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="150dp">
@@ -26,6 +27,7 @@
                 tools:ignore="ContentDescription" />
 
         </RelativeLayout>
+
         <TextView
             android:id="@+id/tv_TenTruyen"
             android:layout_width="match_parent"
@@ -35,5 +37,7 @@
             android:gravity="center"
             android:textSize="15sp"
             tools:ignore="HardcodedText" />
+
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>

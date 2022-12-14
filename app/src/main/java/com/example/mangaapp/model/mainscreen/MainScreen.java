@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,10 +40,8 @@ public class MainScreen extends AppCompatActivity {
     RecyclerView rcvDSTruyenHot, rcvDSTruyenMoi;
     TruyenTranhAdapter truyenTranhHotAdapter, truyenTranhMoiAdapter, truyenTranhAdapter;
     List<Truyen> listTruyenMoi, listTruyenHot;
-    ImageView imgSearch, imgPhanLoai;
+    ImageView imgSearch, imgPhanLoai, imgAnhBia;
     String id;
-
-    private ViewPager2 viewPager2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +92,7 @@ public class MainScreen extends AppCompatActivity {
         });
         imgSearch.setOnClickListener(v -> startActivity(new Intent(MainScreen.this, SearchTruyen.class)));
         imgPhanLoai.setOnClickListener(v -> startActivity(new Intent(MainScreen.this, GetAllTheLoai.class)));
-
+        imgAnhBia.setOnClickListener(v -> startActivity(new Intent(MainScreen.this, BXH.class)));
     }
 
     //Khởi tạo
@@ -103,6 +102,7 @@ public class MainScreen extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_nav_view);
         imgSearch = findViewById(R.id.img_search_main);
         imgPhanLoai = findViewById(R.id.img_phanloai);
+        imgAnhBia = findViewById(R.id.imgAnhBia);
 
     }
 

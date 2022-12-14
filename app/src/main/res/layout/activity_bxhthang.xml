@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundtaikhoan"
     android:orientation="vertical"
     tools:context=".display.BXHThang">
 
@@ -17,10 +16,10 @@
 
         <ImageView
             android:id="@+id/bxhthang_home"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:contentDescription="@string/img_home"
-            android:src="@drawable/ic_ttcn_home" />
+            android:src="@drawable/ic_baseline_arrow_back_24" />
     </LinearLayout>
 
     <RelativeLayout
@@ -30,12 +29,9 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="140dp"
-            app:cardBackgroundColor="@color/dark_orange"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5dp"
-            app:cardUseCompatPadding="true"
-            card_view:cardCornerRAdius="5dp">
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,17 +45,19 @@
                     android:gravity="center"
                     android:text="@string/bangxephang"
                     android:textColor="@color/black"
-                    android:textSize="40sp"
-                    android:textStyle="bold|italic" />
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
 
                 <View
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/silver" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:weightSum="2">
@@ -91,24 +89,28 @@
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
-
                 </LinearLayout>
+
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcv_bxhthang"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169"
-        card_view:listitem="@layout/item_bxh" />
+        android:layout_height="match_parent"
+        android:background="#A0A0A0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_bxhthang"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            card_view:listitem="@layout/item_bxh" />
+
+    </LinearLayout>
+
 
 </LinearLayout>

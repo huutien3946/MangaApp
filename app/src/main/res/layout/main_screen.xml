@@ -36,9 +36,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="19dp"
             android:layout_marginEnd="31dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="13dp"
             android:src="@drawable/ic_baseline_menu_24"
             tools:ignore="ContentDescription" />
 
@@ -49,9 +49,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="232dp"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="18dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="13dp"
             android:layout_toStartOf="@+id/img_phanloai"
             android:src="@drawable/ic_search"
             tools:ignore="ContentDescription" />
@@ -76,6 +76,7 @@
                 tools:ignore="UselessParent">
 
                 <ImageView
+                    android:id="@+id/imgAnhBia"
                     android:layout_width="match_parent"
                     android:layout_height="149dp"
                     android:src="@drawable/anhbia" />
@@ -121,17 +122,15 @@
 
     </ScrollView>
 
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="@color/dark_midle_gray"
-        app:itemIconSize="30dp"
-        app:itemIconTint="@color/goldenrod"
-        app:itemTextColor="@color/goldenrod"
+        android:background="@color/white"
+        app:itemIconSize="20dp"
+        app:itemIconTint="#404040"
+        app:itemTextColor="#404040"
         app:menu="@menu/mainscreen_menu" />
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

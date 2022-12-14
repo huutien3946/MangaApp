@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mangaapp.R;
 import com.example.mangaapp.adapter.TheLoaiAdapter;
 import com.example.mangaapp.api.ApiService;
-import com.example.mangaapp.mainscreen.MainScreen;
+import com.example.mangaapp.model.mainscreen.MainScreen;
 import com.example.mangaapp.model.TheLoai;
 
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ import retrofit2.Response;
 
 public class GetAllTheLoai extends AppCompatActivity {
 
-    private ImageView imgBack, imgSearch;
+    private ImageView imgBack;
     private RecyclerView rcvTheloai;
     private TheLoaiAdapter theLoaiAdapter;
     private List<TheLoai> listTheLoai;
@@ -40,7 +40,6 @@ public class GetAllTheLoai extends AppCompatActivity {
         init();
         getTatCaTheLoai();
 
-        imgSearch.setOnClickListener(v -> startActivity(new Intent(GetAllTheLoai.this, SearchTruyen.class)));
         imgBack.setOnClickListener(v -> {
             startActivity(new Intent(GetAllTheLoai.this, MainScreen.class));
             finish();
@@ -56,7 +55,6 @@ public class GetAllTheLoai extends AppCompatActivity {
     private void init() {
         listTheLoai = new ArrayList<>();
         rcvTheloai = findViewById(R.id.rcv_all_theloai);
-        imgSearch = findViewById(R.id.img_search);
         imgBack = findViewById(R.id.img_back);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
         rcvTheloai.setLayoutManager(gridLayoutManager);

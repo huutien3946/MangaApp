@@ -54,4 +54,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.2.1"
     implementation 'kr.co.prnd:readmore-textview:1.0.0'
 
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
 }

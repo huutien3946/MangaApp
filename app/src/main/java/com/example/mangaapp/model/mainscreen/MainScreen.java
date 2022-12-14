@@ -1,19 +1,18 @@
-package com.example.mangaapp.mainscreen;
+package com.example.mangaapp.model.mainscreen;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.mangaapp.R;
 import com.example.mangaapp.adapter.TruyenTranhAdapter;
@@ -42,6 +41,8 @@ public class MainScreen extends AppCompatActivity {
     List<Truyen> listTruyenMoi, listTruyenHot;
     ImageView imgSearch, imgPhanLoai;
     String id;
+
+    private ViewPager2 viewPager2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +103,7 @@ public class MainScreen extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_nav_view);
         imgSearch = findViewById(R.id.img_search_main);
         imgPhanLoai = findViewById(R.id.img_phanloai);
+
     }
 
     private void initGridView() {

@@ -19,7 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.mangaapp.R;
 import com.example.mangaapp.api.ApiService;
 import com.example.mangaapp.function.SignIn;
-import com.example.mangaapp.mainscreen.MainScreen;
+import com.example.mangaapp.model.mainscreen.MainScreen;
 import com.example.mangaapp.model.TaiKhoan;
 
 import retrofit2.Call;

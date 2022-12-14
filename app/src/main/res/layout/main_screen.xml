@@ -4,37 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainscreen.MainScreen">
+    tools:context=".model.mainscreen.MainScreen"
+    android:background="@color/white">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_gravity="top"
-        android:background="#363F44">
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="246dp"
+            android:layout_marginBottom="18dp"
+            android:text="Đề xuất"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
 
         <ImageView
             android:id="@+id/img_phanloai"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="31dp"
             android:layout_marginBottom="15dp"
-            android:src="@drawable/ic_menu_yellow"
+            android:src="@drawable/ic_baseline_menu_24"
             tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/img_search_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="232dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
             android:layout_marginBottom="15dp"
-            android:src="@drawable/ic_search_yellow"
+            android:layout_toStartOf="@+id/img_phanloai"
+            android:src="@drawable/ic_search"
             tools:ignore="ContentDescription" />
     </RelativeLayout>
 
@@ -49,7 +68,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -57,30 +75,39 @@
                 android:orientation="vertical"
                 tools:ignore="UselessParent">
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="149dp"
+                    android:src="@drawable/anhbia" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     android:text="@string/hot_truyen"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
-                    tools:ignore="RtlHardcoded" />
+                    tools:ignore="RtlHardcoded"
+                    android:layout_marginTop="5dp"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rcv_DSTruyenHot"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:text="@string/new_truyen"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
                     tools:ignore="RtlHardcoded" />
 

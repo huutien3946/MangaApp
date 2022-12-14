@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mangaapp.mainscreen.MainScreen;
+import com.example.mangaapp.model.mainscreen.MainScreen;
 
 public class ThongTinLienHe extends AppCompatActivity {
     private ImageView home;

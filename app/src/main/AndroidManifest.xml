@@ -72,7 +72,7 @@
             android:name=".function.GetTruyen"
             android:exported="false" />
         <activity
-            android:name=".mainscreen.MainScreen"
+            android:name=".model.mainscreen.MainScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

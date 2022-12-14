@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mangaapp.R;
 import com.example.mangaapp.adapter.BXHAdapter;
 import com.example.mangaapp.api.ApiService;
-import com.example.mangaapp.mainscreen.MainScreen;
+import com.example.mangaapp.model.mainscreen.MainScreen;
 import com.example.mangaapp.model.Truyen;
 
 import java.util.ArrayList;

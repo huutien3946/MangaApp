@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/crv_TruyenTranh"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,6 +24,7 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/background"
                 tools:ignore="ContentDescription" />
+
         </RelativeLayout>
         <TextView
             android:id="@+id/tv_TenTruyen"

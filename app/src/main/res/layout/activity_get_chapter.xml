@@ -28,11 +28,12 @@
 
     <Button
         android:id="@+id/btn_ThemBinhLuan"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:background="@drawable/button"
+        android:textColor="@color/black"
         android:text="@string/add" />
 
 </LinearLayout>

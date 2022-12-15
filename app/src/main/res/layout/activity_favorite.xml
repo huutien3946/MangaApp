@@ -10,12 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@color/dark_midle_gray"
-        android:gravity="center"
+        android:background="@color/white"
         android:text="Yêu thích"
-        android:textAllCaps="true"
-        android:textColor="@color/goldenrod"
-        android:textSize="30sp" />
+        android:drawableStart="@drawable/ic_baseline_star_outline_24"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcv_yeuthich"

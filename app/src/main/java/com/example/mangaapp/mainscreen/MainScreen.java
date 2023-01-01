@@ -1,4 +1,4 @@
-package com.example.mangaapp.model.mainscreen;
+package com.example.mangaapp.mainscreen;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -7,13 +7,11 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.mangaapp.R;
 import com.example.mangaapp.adapter.TruyenTranhAdapter;

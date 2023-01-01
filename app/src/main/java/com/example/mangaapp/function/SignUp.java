@@ -162,7 +162,7 @@ public class SignUp extends AppCompatActivity {
                 .setIcon(R.drawable.ic_notifications_red)
                 .setTitle("Thông báo");
         builder.setPositiveButton("OK", (dialog, which) -> {
-            Intent intent = new Intent(((Dialog) dialog).getContext(), ThongTinTaiKhoan.class);
+            Intent intent = new Intent(((Dialog) dialog).getContext(), SignIn.class);
             startActivity(intent);
             finish();
         });

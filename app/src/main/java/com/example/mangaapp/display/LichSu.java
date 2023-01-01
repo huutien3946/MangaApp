@@ -18,6 +18,7 @@ import com.example.mangaapp.model.TaiKhoan;
 import com.example.mangaapp.model.Truyen;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import retrofit2.Call;
@@ -64,13 +65,14 @@ public class LichSu extends AppCompatActivity {
                     public void onResponse(@NonNull Call<List<Truyen>> call, @NonNull Response<List<Truyen>> response) {
                         listTruyen = response.body();
                         if (listTruyen != null) {
-                            for (int i = 0; i < listTruyen.size(); i++) {
-                                for (int j = 0; j < LichSu.size(); j++) {
-                                    if (listTruyen.get(i).get_id().equals(LichSu.get(j))) {
-                                        list.add(listTruyen.get(i));
+                            for (int i = 0; i < LichSu.size(); i++) {
+                                for (int j = 0; j < listTruyen.size(); j++) {
+                                    if (LichSu.get(i).equals(listTruyen.get(j).get_id())) {
+                                        list.add(listTruyen.get(j));
                                     }
                                 }
                             }
+                            Collections.reverse(list);
                             truyenTranhAdapter = new TruyenTranhAdapter(LichSu.this, list);
                             recyclerView.setAdapter(truyenTranhAdapter);
                         }

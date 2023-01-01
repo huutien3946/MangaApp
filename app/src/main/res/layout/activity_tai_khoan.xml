@@ -357,117 +357,16 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/ttcn_tv_ChinhSuaMK"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp"
-                app:cardUseCompatPadding="true"
-                card_view:cardCornerRAdius="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="-20dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:gravity="center"
-                            android:orientation="horizontal"
-                            android:padding="1dp"
-                            card_view:ignore="UselessParent">
-
-                            <ImageView
-                                android:id="@+id/img_MK"
-                                android:layout_width="35dp"
-                                android:layout_height="35dp"
-                                android:contentDescription="@string/img_matkhau"
-                                android:padding="1dp"
-                                android:src="@drawable/ic_ttcn_lock" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="5dp"
-                                android:layout_marginEnd="5dp"
-                                android:layout_marginBottom="5dp"
-                                android:text="@string/ttcn_matkhau"
-                                android:textSize="12sp"
-                                android:textStyle="bold|normal" />
-
-
-                            <Button
-                                android:id="@+id/ttcn_btn_XacnhanPass"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="70dp"
-                                android:text="@string/submit"
-                                android:textSize="11sp"
-                                android:visibility="invisible" />
-
-                            <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_marginStart="10dp"
-                                android:contentDescription="@string/img_chinhsua"
-                                android:padding="1dp"
-                                android:src="@drawable/ic_ttcn_setting" />
-
-                            <TextView
-                                android:id="@+id/ttcn_tv_ChinhSuaMK"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/ttcn_chinhsua"
-                                android:textColor="@color/deep_sky_blue"
-                                android:textSize="12sp"
-                                android:textStyle="bold|normal" />
-                        </LinearLayout>
-                    </RelativeLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="25dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginStart="10dp"
-                            android:contentDescription="@string/img_sora"
-                            android:padding="2dp"
-                            android:src="@drawable/ic_ttcn_hovaten1"
-                            app:tint="@color/black" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <EditText
-                                android:id="@+id/ttcn_tv_MatKhau"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:enabled="false"
-                                android:textColor="@color/black"
-                                android:textSize="20sp"
-                                android:textStyle="bold"
-                                card_view:ignore="Autofill,LabelFor,TextFields" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+                android:layout_gravity="end"
+                android:text="@string/ttcn_chinhsua"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|normal" />
 
         </LinearLayout>
 

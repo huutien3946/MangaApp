@@ -230,7 +230,7 @@
                                 android:id="@+id/ttcn_tv_ChinhSuaHoTen"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/ttcn_chinhsua"
+                                android:text="Đổi họ tên"
                                 android:textColor="@color/deep_sky_blue"
                                 android:textSize="12sp"
                                 android:textStyle="bold|normal" />
